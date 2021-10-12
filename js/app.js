@@ -86,8 +86,25 @@ function isPalindrome(str1) {
 // isPalindrome("racecar"); //true
 // isPalindrome("hello"); //false
 
-//
-
 // Challenge 3: Reverse an Integer
 // Return an integer in reverse
 // ex. reverseInt(521) === 125
+
+function reverseInt(int) {
+  let intString = int.toString().split("").reverse().join("");
+  let reversedInt = parseInt(intString) * Math.sign(int); //returns either a pos or neg value
+  // console.log(reversedInt);
+  return reversedInt;
+}
+
+reverseInt(123); ///321
+
+// Challenge 4: Capitalize Letters
+// Return a string with the first letter of every word capitalized
+// ex. capitalizeLetters("i love javascript") === "I Love Javascript"
+
+function capitalizeLetters(str) {
+  return caps;
+}
+
+capitalizeLetters("i love javascript");
