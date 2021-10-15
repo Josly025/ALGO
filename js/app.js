@@ -104,14 +104,28 @@ reverseInt(123); ///321
 // ex. capitalizeLetters("i love javascript") === "I Love Javascript"
 
 function capitalizeLetters(str) {
-  const strArr = str.toLowerCase().split(" "); //maker sure this is spaced
-  //looping over array and objects use for in
+  // const strArr = str.toLowerCase().split(" "); //maker sure this is spaced
+  // //looping over array and objects use for in
+  // for (i in strArr) {
+  //   strArr[i] =
+  //     strArr[i].substring(0, 1).toUpperCase() + strArr[i].substring(1);
+  // }
+  // let caps = strArr.join(" ");
+  // console.log(console.log(caps));
+
+  ///seperate str into array
+  //loop array and change for the singular few
+  console.log(str);
+  let strArr = str.toLowerCase().split(" ");
+
   for (i in strArr) {
     strArr[i] =
       strArr[i].substring(0, 1).toUpperCase() + strArr[i].substring(1);
   }
+
   let caps = strArr.join(" ");
-  console.log(console.log(caps));
+  console.log(caps);
+  return caps;
 }
 
 capitalizeLetters("i love javascript");
@@ -122,19 +136,19 @@ capitalizeLetters("i love javascript");
 // For numbers which are multiples of both 3 and 5, print ("Fizzbuzz")
 
 function fizzBuzz() {
-  for (let i = 1; i < 101; i++) {
-    if (i % 3 === 0 && i % 5 === 0) {
-      console.log("FizzBuzz");
-      return "FizzBuzz";
-    } else if (i % 3 === 0) {
-      console.log("Fizz");
-      return "Fizz";
-    } else if (i % 5 === 0) {
-      console.log("Buzz");
-      return "Buzz";
-    } else console.log(i);
-    return i;
-  }
+  // for (let i = 1; i < 101; i++) {
+  //   if (i % 3 === 0 && i % 5 === 0) {
+  //     console.log("FizzBuzz");
+  //     return "FizzBuzz";
+  //   } else if (i % 3 === 0) {
+  //     console.log("Fizz");
+  //     return "Fizz";
+  //   } else if (i % 5 === 0) {
+  //     console.log("Buzz");
+  //     return "Buzz";
+  //   } else console.log(i);
+  //   return i;
+  // }
 }
 
 fizzBuzz();
