@@ -152,3 +152,62 @@ function fizzBuzz() {
 }
 
 fizzBuzz();
+
+//CHALLENGE 5: MAX CHARACTER
+// Return the character that is the most common in a string
+// ex. maxCharacter("javascript") == "a"
+
+function maxCharacter(str) {
+  //character map
+  let charMap = {};
+  let maxNum = 0;
+  let maxChar = "";
+
+  for (let char of str) {
+    if (charMap[char]) {
+      charMap[char]++;
+    } else {
+      charMar[char] = 1;
+    }
+  }
+
+  ///loop through charMap
+  for (let char in charMap) {
+    if (charMap[char] > maxNum) {
+      maxNum = charMap[char];
+      maxChar = char;
+    }
+  }
+  return maxChar;
+  console.log(maxChar);
+}
+
+maxCharacter("javascript"); //return a
+
+
+
+
+
+function maxCharacter(str){
+let charMap = {};
+let maxNum = 0;
+let maxChar = ""
+
+for(let char of str){
+  if(charMap[char]){
+    charMap[char] = ++;
+  }else{
+    charMap[char] = 1;
+  }
+}
+
+for(let char in charMap){
+  if(charMap[char] >  charMax){
+    maxNum = charMap[char];
+    maxChar = char;
+  }
+}
+
+
+return maxChar 
+}
